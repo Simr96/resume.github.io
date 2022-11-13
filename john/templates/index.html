@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -5,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href='https://simr96.github.io/resume.github.io/static/assets/css/styles.css'>
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -140,7 +141,7 @@
 
                         <textarea name="" id="msg" cols="0" rows="10" class="contact__input"></textarea>
 
-                        <input type="submit" value="Sending" class="contact__button">
+                        <input type="submit" value="Send" class="contact__button">
                     </form>
                 </div>
             </section>
@@ -203,6 +204,6 @@ Email.send({
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
-        <script src='https://simr96.github.io/resume.github.io/assets/js/main.js'></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
     </body>
 </html>
